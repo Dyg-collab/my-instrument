@@ -29,12 +29,11 @@ my-harmonium
 1. Push this project to a GitHub repository named `my-harmonium`.  
 2. Go to the repository’s Settings → Pages.  
 3. Under Source, select the `main` branch and the root folder.  
-4. Save and wait a moment. Your harmonium will be live at  
+4. Save and wait a moment.
+5. Harmonium live at  :-
    `https://Dyg-collab.github.io/my-harmonium/`
 
-Enjoy making music! 
 
----
 
 Built by Divyansh Gupta  
 https://github.com/Dyg-collab  
