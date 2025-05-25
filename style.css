@@ -1,0 +1,90 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #fafafa;
+  color: #333;
+}
+
+
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+header .subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+.keyboard-container {
+  position: relative;
+  width: fit-content;
+  margin: 2rem auto;
+}
+.white-keys {
+  display: flex;
+}
+.black-keys {
+  position: absolute;
+  top: 0;
+  display: flex;
+  pointer-events: none; 
+}
+.key {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  position: relative;
+}
+.white {
+  width: 60px;
+  height: 240px;
+  margin: 0 1px;
+  background: #fff;
+  border: 1px solid #444;
+  z-index: 1;
+}
+.black {
+  width: 40px;
+  height: 160px;
+  margin: 0 -20px;
+  background: #000;
+  border: 1px solid #222;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.black[data-note="C#4"] { left: 45px; }
+.black[data-note="D#4"] { left: 105px; }
+.black[data-note="F#4"] { left: 225px; }
+.black[data-note="G#4"] { left: 285px; }
+.black[data-note="A#4"] { left: 345px; }
+
+
+.key.active {
+  background: #f0e130 !important;
+  transform: scale(0.95);
+}
+
+.instructions {
+  max-width: 360px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.instructions h2 {
+  margin-bottom: 0.5rem;
+}
+.instructions p {
+  line-height: 1.4;
+}
